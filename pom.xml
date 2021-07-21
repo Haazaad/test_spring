@@ -9,15 +9,10 @@
   <version>1.0.0</version>
   <packaging>war</packaging>
 
-  <!--<name>test_spring Maven Webapp</name>-->
-  <!-- FIXME change it to the project's website -->
-  <!--<url>http://www.example.com</url>-->
-
-
   <properties>
     <junit.version>4.11</junit.version>
     <javax.servlet.version>4.0.1</javax.servlet.version>
-    <logback.version>1.0.13</logback.version>
+    <logback.version>1.1.7</logback.version>
     <slf4j.version>1.7.31</slf4j.version>
     <jackson.version>2.11.4</jackson.version>
     <postgresql.jdbc.version>42.2.21</postgresql.jdbc.version>
@@ -40,6 +35,12 @@
       <artifactId>slf4j-api</artifactId>
       <version>${slf4j.version}</version>
       <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <version>${logback.version}</version>
     </dependency>
 
     <dependency>
