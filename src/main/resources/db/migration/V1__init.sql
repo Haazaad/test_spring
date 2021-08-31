@@ -24,10 +24,15 @@ create table users_roles
 
 insert into roles (name)
 values ('ROLE_USER'),
-       ('ROLE_ADMIN');
+       ('ROLE_ADMIN'),
+       ('ROLE_SUPERADMIN');
 
 insert into users(username, password, email)
-values ('user', '$2a$04$Fx/SX9.BAvtPlMyIIqqFx.hLY2Xp8nnhpzvEEVINvVpwIPbA3v/.i', 'user@gmail.com');
+values ('user', '$2a$12$RlEO0Vl3e5ot1TFsyhYl6uzNuiFtXrGWiFRHKMaqVTvgrdfVLGrdK', 'user@gmail.com'),
+       ('admin', '$2a$12$RlEO0Vl3e5ot1TFsyhYl6uzNuiFtXrGWiFRHKMaqVTvgrdfVLGrdK', 'admin@gmail.com'),
+       ('superadmin', '$2a$12$RlEO0Vl3e5ot1TFsyhYl6uzNuiFtXrGWiFRHKMaqVTvgrdfVLGrdK', 'superadmin@gmail.com');
 
 insert into users_roles(user_id, role_id)
-values (1, 1);
+values (1, 1),
+       (2, 2),
+       (3, 3);
