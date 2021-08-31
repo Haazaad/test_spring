@@ -1,4 +1,4 @@
-package ru.haazad.webapp.webapp;
+package ru.haazad.webapp;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
